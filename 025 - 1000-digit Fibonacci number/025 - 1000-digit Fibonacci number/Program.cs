@@ -32,13 +32,13 @@ namespace _025___1000_digit_Fibonacci_number
             BigInteger newNum = 1;
             BigInteger tempNum = 0;
             Console.WriteLine("{0} - {1}", count, newNum);
-            while (newNum.ToString().Length < 1000)
+            while (newNum.ToString().Length < 10)
             {
                 tempNum = newNum;
                 newNum += oldNum;
                 oldNum = tempNum;
                 count++;
-                Console.WriteLine("{0} - {1}", count, newNum);
+                Console.WriteLine("{0} - {1}", count, newNum.ToString().Length);
             }
 
         }
